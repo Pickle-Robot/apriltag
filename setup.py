@@ -9,7 +9,8 @@ setuptools.setup(
     description='Apriltag Python utilities',
     long_description='Forked from https://github.com/swatbotics/apriltag',
     url='https://github.com/Pickle-Robot/apriltag',
-    packages=setuptools.find_packages(),
+    packages=['apriltag'],
+    package_dir={'apriltag': 'python/apriltag'},
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: The Regents of the University of Michigan',
